@@ -1,0 +1,137 @@
+.container 
+{
+  max-width: 1850px;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #dde6d0;
+  min-height: 100vh;
+}
+.header 
+{
+  background-color: #659b7593;
+  color: rgb(35, 34, 37);
+  padding: 43px 45px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+}
+.header h1 
+{
+  margin: 0;
+  font-size: 29px;
+}
+.layout 
+{
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+/* --- Job List --- */
+.listBox 
+{
+  width: 320px;
+  flex-shrink: 0;
+  background: rgba(160, 131, 131, 0.199);
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.list 
+{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.listItem 
+{
+  padding: 14px 16px;
+  margin-bottom: 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  background: white;
+}
+.listItem:hover 
+{
+  background-color: #f3f4f6;
+}
+.activeItem 
+{
+  padding: 14px 16px;
+  margin-bottom: 8px;
+  border: 2px solid #6f97c0;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #e8f0fe;
+}
+.emptyMsg 
+{
+  color: gray;
+  font-style: italic;
+}
+/* --- Job Details --- */
+.detailBox 
+{
+  flex: 1;
+  background: rgba(160, 131, 131, 0.199);
+  border-radius: 12px;
+  padding: 24px;
+  min-height: 323px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.placeholder 
+{
+  color: gray;
+  font-style: italic;
+  text-align: center;
+  margin-top: 80px;
+}
+/* --- Form --- */
+.formBox 
+{
+  width: 320px;
+  flex-shrink: 0;
+  background: rgba(160, 131, 131, 0.199);
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.formGroup 
+{
+  margin-bottom: 14px;
+}
+.formGroup label
+ {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #333;
+}
+.formGroup input,
+.formGroup select 
+{
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.btn 
+{
+  width: 100%;
+  padding: 10px;
+  background-color: #0a66c2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 4px;
+}
+/* --- Status --- */
+.applied   { color: #3730a3; font-weight: bold; }
+.interview { color: #92400e; font-weight: bold; }
+.offer     { color: #166534; font-weight: bold; }
+.rejected  { color: #991b1b; font-weight: bold; }

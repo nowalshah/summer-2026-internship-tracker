@@ -1,66 +1,30 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
+"use client";
+import { useState } from "react";
+import jobs from "../data/jobs";
+import JobList from "../components/JobList";
+import JobDetails from "../components/JobDetails";
+import AddJobForm from "../components/AddJobForm";
+import styles from "../styles/Home.module.css";
 export default function Home() {
+  const [jobList, setJobList] = useState(jobs);
+  const [selectedJob, setSelectedJob] = useState(null);
+  const addJob = (newJob) => {
+    setJobList([...jobList, { ...newJob, id: Date.now() }]);
+  };
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className={styles.container}>
+      <div className={styles.header}>
+        <h1>Internship Tracker (Summer 2026)</h1>
+      </div>
+      <div className={styles.layout}>
+        <JobList
+          jobs={jobList}
+          onSelectJob={setSelectedJob}
+          selectedJob={selectedJob}
         />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+        <JobDetails job={selectedJob} />
+        <AddJobForm addJob={addJob} />
+      </div>
     </div>
   );
 }

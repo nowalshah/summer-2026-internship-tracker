@@ -16,8 +16,8 @@
   font-family: var(--font-geist-sans);
   background-color: var(--background);
 }
-
-.main {
+.main 
+{
   display: flex;
   min-height: 100vh;
   width: 100%;
@@ -28,16 +28,16 @@
   background-color: var(--foreground);
   padding: 120px 60px;
 }
-
-.intro {
+.intro 
+{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
   gap: 24px;
 }
-
-.intro h1 {
+.intro h1 
+{
   max-width: 320px;
   font-size: 40px;
   font-weight: 600;
@@ -46,21 +46,21 @@
   text-wrap: balance;
   color: var(--text-primary);
 }
-
-.intro p {
+.intro p 
+{
   max-width: 440px;
   font-size: 18px;
   line-height: 32px;
   text-wrap: balance;
   color: var(--text-secondary);
 }
-
-.intro a {
+.intro a 
+{
   font-weight: 500;
   color: var(--text-primary);
 }
-
-.ctas {
+.ctas 
+{
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -68,8 +68,8 @@
   gap: 16px;
   font-size: 14px;
 }
-
-.ctas a {
+.ctas a
+ {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,35 +82,30 @@
   width: fit-content;
   font-weight: 500;
 }
-
-a.primary {
+a.primary 
+{
   background: var(--text-primary);
   color: var(--background);
   gap: 8px;
 }
-
-a.secondary {
+a.secondary 
+{
   border-color: var(--button-secondary-border);
 }
-
-/* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background: var(--button-primary-hover);
     border-color: transparent;
   }
-
   a.secondary:hover {
     background: var(--button-secondary-hover);
     border-color: transparent;
   }
 }
-
 @media (max-width: 600px) {
   .main {
     padding: 48px 24px;
   }
-
   .intro {
     gap: 16px;
   }
