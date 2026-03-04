@@ -28,6 +28,6 @@ Then open [http://localhost:3000](http://localhost:3000)
 
 ## 👩‍💻 About
 
-Built as part of my CPAN 144 coursework at college. I am currently looking for a Summer 2026 internship or co-op opportunity in the GTA.
+I am currently looking for a Summer 2026 internship or co-op opportunity in the GTA.
 
 🔗 [LinkedIn](https://www.linkedin.com/in/syeda-nowal-shah-4160962b5/)
