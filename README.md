@@ -2,12 +2,6 @@
 
 A React + Next.js web app to browse and track internship, co-op and part-time job opportunities in the Greater Toronto Area.
 
-## 📸 Screenshots
-
-![Homepage](screenshots/homepage.png)
-![Job Details](screenshots/details.png)
-![Add Job Form](screenshots/form.png)
-
 ## ✨ Features
 
 - Browse 7 GTA job listings (Toronto, Mississauga, Brampton, Milton, Vaughan)
