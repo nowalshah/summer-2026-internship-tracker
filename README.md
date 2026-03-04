@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ☀️ Summer 2026 GTA Internship Tracker
 
-## Getting Started
+A React + Next.js web app to browse and track internship, co-op and part-time job opportunities in the Greater Toronto Area.
 
-First, run the development server:
+## 📸 Screenshots
+
+![Homepage](screenshots/homepage.png)
+![Job Details](screenshots/details.png)
+![Add Job Form](screenshots/form.png)
+
+## ✨ Features
+
+- Browse 7 GTA job listings (Toronto, Mississauga, Brampton, Milton, Vaughan)
+- Click any job to see full details, description, and requirements
+- Add and track your own job applications
+- Filter jobs by status (Applied, Interview, Offer)
+- Form validation with error messages
+- Fully responsive layout
+
+## 🛠️ Built With
+
+- React
+- Next.js
+- CSS Modules
+
+## 🚀 How to Run
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 👩‍💻 About
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Built as part of my CPAN 144 coursework at college. I am currently looking for a Summer 2026 internship or co-op opportunity in the GTA.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🔗 [LinkedIn](https://www.linkedin.com/in/syeda-nowal-shah-4160962b5/)
